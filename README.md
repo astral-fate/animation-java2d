@@ -214,21 +214,39 @@ now to apply that every row of x, and every column of y is increased by this val
       int hight=100; 
       int cellSize = 20;
       //for drawing (x,y) for the length of the grid square
-      for (int i=0; i<width; i++) {
+      for (int i=0; i<=cellSize; i++) {
       //for drwaing the horizntal line
       g2.drawline(0,y, width, y );
       //for drawing the vertical line(0,y , width ,0 );
       g2.drawline(x, 0, x, hight);
-      
-      
+
 
       //for increasing x and y by the value of cell size
         x = x+cellSize;
         y = y+cellSize; 
-      
-      
-      
-      
-      
       }
+      
+      
+      
+another way to phrase it too, instead of stating two statments; one for adding the cellSize to x, and the other to y. We can create a variable named current, intilize it to zero, then use it as the coordinates of x and y alike, then increasing its value to x and y 
+
+
+
+
+        int x = 0;
+        int y =0;
+        int current = 0;
+        int width = 50;
+        int hight=50;
+        int cellSize = 10;
+        //for drawing (x,y) for the length of the grid square
+        for (int i=0; i<=cellSize; i++) {
+            //for drwaing the horizntal line
+            g2.drawLine(0, current , width ,current );
+            //for drawing the vertical line
+            g2.drawLine(current, 0, current, hight);
+            //for increasing x and y by the value of cell size
+            current += cellSize;
+           
+        }
 
