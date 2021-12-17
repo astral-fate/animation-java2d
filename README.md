@@ -15,9 +15,16 @@ to work with animation, we have to implement Runable, from abstract class Jpanel
   then, for applying animation we have to define a new thread object, as such 
   
   
+  
+  
+  
+  
+  
+  
+          class JAppPanel extends JPANEL implements Runable{
           Threads thread = new Threads(this);
-          
-          
+          thread.start()
+                         }
           
           
   to work with thread, we have to use with it sleep(), which delays the thread per an amount we define ourselves as such:
@@ -33,7 +40,7 @@ to work with animation, we have to implement Runable, from abstract class Jpanel
              }
              
              catch(InterruptedException ex){
-             
+             ex.getMessage();
             
               
              }
