@@ -1,0 +1,21 @@
+Inorder to create a grid square system, we will be drawing number of vertical & horizintal lines, just as we learned before as follows:
+
+           g2.drawLine(0,0, 200,0);
+           g2.drawLine(0,2, 200,20);
+           g2.drawLine(20,0, 20,200);
+           g2.drawLine(4,0, 4,200);
+           
+           
+![image](https://user-images.githubusercontent.com/63984422/146608034-a42c484f-7fbf-4372-8be3-8e8cf066017d.png)
+           
+           
+           
+           
+
+
+
+
+
+
+
+Only that it would take lots of time to draw number of lines
