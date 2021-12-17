@@ -233,19 +233,20 @@ another way to phrase it too, instead of stating two statments; one for adding t
 
 
 
-        
+       
+        int cellSpace = 20;
         int current = 0;
         int cellSize = 10;
-        int cellSpace = 40;
-        int len = cellSapce*cellSize;
+        int len = cellSize*cellSpace;
+      
         //for drawing (x,y) for the length of the grid square
-        for (int i=0; i<=cellSpace; i++) {
-        //for drwaing the horizntal line
-        g2.drawLine(0, current , len ,current );
-        //for drawing the vertical line
-        g2.drawLine(current, 0, current, len);
-        //for increasing x and y by the value of cell size
-        current += cellSize;
+        for (int i=0; i<=cellSize; i++) {
+            //for drwaing the horizntal line
+            g2.drawLine(0, current , len ,current );
+            //for drawing the vertical line
+            g2.drawLine(current, 0, current, len);
+            //for increasing x and y by the value of cell size
+            current += cellSize;
            
         }
-
+  
