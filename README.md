@@ -84,12 +84,26 @@ now in our familiar paint Component class, we just draw a normal Rectangle, and 
                
 
 
-now we want the Rectangle to move from right to left, so we have to change the value of x, so it can horizontally change value, without changing the value of y, and for doing so we will write for loop for this
+now we want the Rectangle to move from right to left, so we have to change the value of x, so it can horizontally change value, without changing the value of y, so for this reason, we have to define a new variable for x, y 
+
+
+                int x =50;
+                int y = 50;
+
+
+
+
+
+
+
+
+and now, we want to creative a for loop to change the value of x, once it moves forward, and once it moves backwards. So we will define a new Boolean variable will name it increases, and set it to true
 
 
                
+               Boolean increasing = true;
                while(true)
-                       if (int i =0; i< && increasing; i++)
+                       if ( x < 400  && increasing)
                        x +=1;
                         else {
                         x -=1;
